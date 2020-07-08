@@ -1,33 +1,12 @@
 digraph wrip_api {
   rankdir=LR;
   graph [ fontname = "Helvetica-Oblique",
-    fontsize = 36,
-    label = "\n\n\n\nWRI API Microservices Dependencies",
-    size = "120,12" ];
-
-  subgraph cluster_1 {
-    node [style=filled];
-    arcgis;
-    bigquery;
-    carto;
-    "Climate Watch South Africa Platform";
-    "doc-writer";
-    "doc-swagger";
-    "doc-executor";
-    document;
-    "gs-pro-config";
-    "high-res";
-    mail;
-    proxy;
-    "rw-lp";
-    "true-color-tiles";
-    label = "Microservices without direct dependencies";
-  }
-
-  subgraph cluster_2 {
-    "analysis-gee" -> geostore;
-    "aqueduct-analysis" -> geostore;
-    "argcis-proyx" -> geostore;
+    fontsize = 15,
+    label = "\nWRI API Microservices Dependencies",
+  ];
+  "analysis-gee" -> geostore;
+  "aqueduct-analysis" -> geostore;
+  "argcis-proyx" -> geostore;
     area -> { geostore query "fw-teams" "subscriptions" };
     "Climate Watch Flagship"  -> { "control-tower"  "Climate Watch: Emissions Scenario Portal" };
     "Climate Watch India Platform" -> "Climate Watch: Emissions Scenario Portal";
@@ -68,8 +47,7 @@ digraph wrip_api {
     webshot;
     widget -> { "control-tower" dataset "graph-client" vocabulary webshot };
     "resource-watch";
-    "resource-watch-manager";
-    "prep-api";
-    "prep-manager";
-  }
+  "resource-watch-manager";
+  "prep-api";
+  "prep-manager";
 }
