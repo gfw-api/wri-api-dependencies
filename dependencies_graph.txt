@@ -1,5 +1,5 @@
 digraph wrip_api {
-
+  rankdir=LR;
   graph [ fontname = "Helvetica-Oblique",
     fontsize = 36,
     label = "\n\n\n\nWRI API Microservices Dependencies",

@@ -1,5 +1,5 @@
 digraph wrip_api_data_storage {
-rankdir=LR;
+  rankdir=LR;
   graph [ fontname = "Helvetica-Oblique",
     fontsize = 15,
     label = "\n\n\n\nWRI API Data Storage",
