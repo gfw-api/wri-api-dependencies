@@ -1,4 +1,4 @@
-### Mapping WRI API Dependencies
+# Mapping WRI API Dependencies
 
 ## How to use?
 
@@ -6,24 +6,23 @@
 2. Paste contents of any of the source files `src/` inside the text area;
 3. Press "Generate Graph!"
 
-## The Graphs
-
-Output of existing graphs can be found on the `graphs/` dir of the repository.
-
-# Dependecies
-
-![Dependencies graph](/graphs/dependencies_graph.png?raw=true "Dependencies Graph")
-
-# Microservices without dependencies
-
-![Microservices without dependencies](/graphs/no_dependencies_graph.png?raw=true "MS Without Dependencies Graph")
-
-# Storage graph
-
-![Storage Graph](/graphs/storage_graph.png?raw=true "Storage Graph")
-
-
 ## How to edit the styles of the graphs
 
 The graphs are generate via DOT (a graph description language), to learn more
 please [read the available guidance](https://www.graphviz.org/pdf/dotguide.pdf).
+
+## The Graphs
+
+Output of existing graphs can be found on the `graphs/` dir of the repository.
+
+### Dependecies
+
+![Dependencies graph](/graphs/dependencies_graph.png?raw=true "Dependencies Graph")
+
+### Microservices without dependencies
+
+![Microservices without dependencies](/graphs/no_dependencies_graph.png?raw=true "MS Without Dependencies Graph")
+
+### Storage graph
+
+![Storage Graph](/graphs/storage_graph.png?raw=true "Storage Graph")
