@@ -3,7 +3,7 @@
 ## How to use?
 
 1. Visit http://www.webgraphviz.com/
-2. Paste contents of file inside the text area;
+2. Paste contents of any of the source files `src/` inside the text area;
 3. Press "Generate Graph!"
 
 
