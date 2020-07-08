@@ -8,10 +8,12 @@ digraph wrip_api {
   "aqueduct-analysis" -> geostore;
   "argcis-proyx" -> geostore;
   area -> { geostore query "fw-teams" "subscriptions" };
+  bigquery -> dataset;
   "Climate Watch Flagship"  -> { "control-tower"  "Climate Watch: Emissions Scenario Portal" };
   "Climate Watch India Platform" -> "Climate Watch: Emissions Scenario Portal";
   "Climate Watch Indonesia Platform" -> "Climate Watch: Emissions Scenario Portal";
   "Climate Watch: Emissions Scenario Portal";
+  carto -> dataset;
   converter -> geostore;
   dataset -> { "control-tower" "task-async" widget layer "graph-client" vocabulary  metadata };
   "doc-orchestrator" -> dataset;

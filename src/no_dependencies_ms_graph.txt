@@ -6,8 +6,6 @@ digraph wrip_api {
   ];
 
   arcgis;
-  bigquery;
-  carto;
   "Climate Watch South Africa Platform";
   "doc-writer";
   "doc-swagger";
