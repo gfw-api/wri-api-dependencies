@@ -1,0 +1,24 @@
+digraph wrip_api_data_storage {
+
+  graph [ fontname = "Helvetica-Oblique",
+    fontsize = 15,
+    label = "\n\n\n\nWRI API Data Storage",
+  ];
+  node [style=filled];
+
+  "ElasticSearch" [ color=red ];
+  "GraphQL" [ color=red ];
+  "MongoDB" [ color=red ];
+  "PostgreSQL" [ color=red ];
+  "RabbitMQ" [ color=red ];
+  "Redis" [ color=red ];
+
+  { "analysis-gee" "prep-manager" "resource-watch" } -> { Redis };
+  { "area" "control-tower" "dataset" "fw-contextual-layers" "geostore" "gfw-user" "layer" "metadata" "task-async" "vocabulary" "widget" } -> { MongoDB };
+  { "aqueduct-analysis" "Climate Watch Flagship" "Climate Watch India Platform" "Climate Watch Indonesia Platform" "Climate Watch South Africa Platform" "prep-api" "resource-watch-manager" } -> { PostgreSQL };
+  "Climate Watch Emissions Scenario Portal" -> { PostgreSQL Redis };
+  { "doc-executor" "doc-writer" "document" } -> { ElasticSearch RabbitMQ };
+  { "doc-orchestrator" } -> { MongoDB ElasticSearch RabbitMQ };
+  { "forms" "fw-teams" "mail" "story" "subscriptions" } -> { MongoDB Redis };
+  { "graph-client" } -> { GraphQL };
+}
