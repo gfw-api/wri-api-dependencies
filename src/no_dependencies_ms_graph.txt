@@ -1,0 +1,22 @@
+digraph wrip_api {
+  rankdir=LR;
+  graph [ fontname = "Helvetica-Oblique",
+    fontsize = 15,
+    label = "Microservices without direct dependencies",
+  ];
+
+  arcgis;
+  bigquery;
+  carto;
+  "Climate Watch South Africa Platform";
+  "doc-writer";
+  "doc-swagger";
+  "doc-executor";
+  document;
+  "gs-pro-config";
+  "high-res";
+  mail;
+  proxy;
+  "rw-lp";
+  "true-color-tiles";
+}
