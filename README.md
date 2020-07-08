@@ -10,6 +10,18 @@
 
 Output of existing graphs can be found on the `graphs/` dir of the repository.
 
+# Dependecies
+
+![Dependencies graph](/graphs/dependencies_graph.png?raw=true "Dependencies Graph")
+
+# Microservices without dependencies
+
+![Microservices without dependencies](/graphs/no_dependencies_graph.png?raw=true "MS Without Dependencies Graph")
+
+# Storage graph
+
+![Storage Graph](/graphs/storage_graph.png?raw=true "Storage Graph")
+
 
 ## How to edit the styles of the graphs
 
