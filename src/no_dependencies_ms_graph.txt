@@ -5,16 +5,10 @@ digraph wrip_api {
     label = "Microservices without direct dependencies",
   ];
 
-  arcgis;
-  "Climate Watch South Africa Platform";
-  "doc-writer";
   "doc-swagger";
-  "doc-executor";
-  document;
   "gs-pro-config";
   "high-res";
   mail;
   proxy;
-  "rw-lp";
   "true-color-tiles";
 }
