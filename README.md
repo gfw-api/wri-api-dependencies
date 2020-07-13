@@ -15,7 +15,7 @@ please [read the available guidance](https://www.graphviz.org/pdf/dotguide.pdf).
 
 Output of existing graphs can be found on the `graphs/` dir of the repository.
 
-### Dependecies
+### Dependencies
 
 ![Dependencies graph](/graphs/dependencies_graph.png?raw=true "Dependencies Graph")
 
